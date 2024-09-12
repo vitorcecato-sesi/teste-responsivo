@@ -273,3 +273,9 @@ li {
     }
 
 }
+@media screen and (max-width: 480px) {
+    .footer img {
+        width: 40%;
+        height: 35%;
+    }
+}
