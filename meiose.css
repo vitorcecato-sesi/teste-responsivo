@@ -1,0 +1,275 @@
+/* 
+Arquivo: CSS Meiose - Atividade Avaliativa de Biologia e do Senai 
+Autores: Laura Betti (N°14) - Lucas Casagrande (N°17) - Milena Souza () - Pietro Melle () - Pyetro Joaquim () - Vitor Cecato (N°29)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fontes */
+h1 {
+    font-size: 2em;
+    font-family: 'Lucida Sans';
+}
+h2 {
+    font-size: 1.8em;
+    font-family: 'Lucida Sans';
+}
+h3 {
+    font-size: 1.5em;
+    font-family: 'Lucida Sans';
+}
+p {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans';
+}
+a {
+    font-size: 1.2em;
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+    color: black;
+}
+li {
+    font-size: 1em;
+    font-family: 'Lucida Sans';
+}
+
+/* Parallax */
+
+/* Flexbox - Site Todo */
+.site {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #CEE741;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #8FD14F;
+    height: 4vh;
+    justify-content: space-evenly;
+}
+
+/* Botões da Navegação */
+.nav a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    background-color: #8FD14F;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.nav a:hover {
+    opacity: 1;
+    transition: 5ms;
+    box-shadow: 0px 0px 15px white;
+}
+
+/* Principal */
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-image: url("Img/parallax.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Introdução */
+.introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0CA75E;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 65vw;
+    text-align: justify;
+    padding: 2em;
+}
+
+/* Blocos de Texto - Introdução */
+.introducao p {
+    width: 60vw;
+    padding-top: 4vh;
+}
+
+.haploide_e_diploide {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid #0CA75E;
+    width: 75vw;
+    padding: 1em;
+}
+
+.haploide_e_diploide h2 {
+    text-align: center;
+}
+
+.picture-intro {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+.meiose-etapas-titulo {
+    background-color: #0CA75E;
+    border: 2px solid black;
+    width: 95%;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Meiose - Etapas */
+.meiose-etapas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    padding-top: 8vh;
+}
+
+/* Explicação Etapas */
+.article-meiose {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    text-align: justify;
+    background-color: #54DA75;
+    padding: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Meiose 1 e 2 */
+.aside-meiose {
+    display: flex;
+    flex-direction: column;
+    background-color: #71E68E;
+    width: 25vw;
+    height: 35vh;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside-meiose a {
+    padding: 5px;
+    background-color: #ABFFBE;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.aside-meiose a:hover {
+    opacity: 1;
+    width: 15vw;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #8FD14F;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 12vw;
+    height: 25vh;
+}
+
+.footer h3 {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+
+/* Medias Screen */
+@media screen and (max-width: 768px) {
+    .header {
+        height: 15vh;
+    }
+
+    .nav {
+        height: 5vh;
+    }
+
+    .haploide_e_diploide img {
+     max-width: 50vw;   
+    }
+
+    .picture-intro {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .meiose-etapas {
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .aside-meiose {
+        width: 65vw;
+    }
+    
+    #meiose1 {
+        order: 2;
+    }
+
+    .article-meiose {
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer img {
+        padding-bottom: 2em;
+        width: 30vw;
+        height: 35vh;
+    }
+
+    .footer section {
+        padding-bottom: 2em;
+    }
+
+}
